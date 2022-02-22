@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+* {  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.bg-container {
+  background-image: url(/assets/images/mobile/image-hero.jpg);
+  background-size: cover;
+}
+
+.header {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__link {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.button__hamburguer {
+  font-size: 24px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: hidden;
+  opacity: .8;
+  cursor: pointer;
+}
+
+.is-desabled {
+  display: none;
+}
+
+.box-text {
+  display: flex;
+  justify-content: center;
+}
+
+.box-text__title {
+  width: 300px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 22px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.c-interactive {
+  width: 90%;
+  margin: 80px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.c-interactive__image {
+  width: 100%;
+}
+
+.sub-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  margin: 18px 0;
+  text-transform: uppercase;
+}
+
+.sect-interactive__paragraph {
+  font-size: 18px;
+}
+
+.c-posts {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.c-posts__list-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 50px 0 30px 0;
+}
+
+.c-posts__cards {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  text-align: start;
+
+}
+
+.c-posts__title {
+  width: 120px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 100;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+}
+
+.button {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid #000000;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  background-color: #FFFFFF;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+/* fazer each no sass */
+
+.c-posts__cards--bg1 { background-image: url(/assets/images/mobile/image-deep-earth.jpg);}
+.c-posts__cards--bg2 { background-image: url(/assets/images/mobile/image-night-arcade.jpg);}
+.c-posts__cards--bg3 { background-image: url(/assets/images/mobile/image-soccer-team.jpg);}
+.c-posts__cards--bg4 { background-image: url(/assets/images/mobile/image-grid.jpg);}
+.c-posts__cards--bg5 { background-image: url(/assets/images/mobile/image-from-above.jpg);}
+.c-posts__cards--bg6 { background-image: url(/assets/images/mobile/image-pocket-borealis.jpg);}
+.c-posts__cards--bg7 { background-image: url(/assets/images/mobile/image-curiosity.jpg);}
+.c-posts__cards--bg8 { background-image: url(/assets/images/mobile/image-fisheye.jpg);}
+
+.footer {
+  margin-top: 80px;
+  padding-top: 50px;
+  text-align: center;
+  background-color: #000000;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__link {
+  font-family: 'Alata', sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.footer__link--large {
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+.footer__reserved {
+  display: block;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.fa-brands {
+  font-size: 24px;
+  margin: 20px 10px;
+}

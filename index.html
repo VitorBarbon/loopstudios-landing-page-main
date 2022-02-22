@@ -3,65 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- styles -->
+  <link rel="stylesheet" href="./assets/style/css/style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
-  <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css' integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p' crossorigin='anonymous'/>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 
-  <header class="header">
-    <div class="header__logo-text">
-      <span class="header__text">Loopstudios</span>
-    </div>
-
-    <div class="header__hamburguer">
-      <!-- menu hamburguer is active -> mobile first design -->
-      <button class="button__hamburguer is-active">
-        <i class="fa-solid fa-bars"></i>
-        <!-- Icon font awesome -> bars -->
-      </button>
-    </div>
-
-    <!-- start main navigation bar -->
-    <nav class="header__nav">
-      <ul class="header__nav__list">
-        <li>
-          <a href="#" class="header__nav__link">About</a>
-        </li>
-        <li>
-          <a href="#" class="header__nav__link">Careers</a>
-        </li>
-        <li>
-          <a href="#" class="header__nav__link">Events</a>
-        </li>
-        <li>
-          <a href="#" class="header__nav__link">Products</a>
-        </li>
-        <li>
-          <a href="#" class="header__nav__link">Support</a>
-        </li>    
-        <li>
-          <div>
-            <!-- social medias --> colocar midias AQUI
-          </div>
-        </li>   
-      </ul>
-    </nav>
-  </header>
-  <!-- end main navigation bar -->
+  <div class="bg-container">
+    <header class="header">
+      <div class="logo">
+        <a href="/" class="logo__link">Loopstudios</a>
+      </div>
+      
+      <div class="header__hamburguer">
+        <!-- menu hamburguer is active -> mobile first design -->
+        <button class="button__hamburguer is-active">
+          <i class="fa-solid fa-bars"></i>
+          <!-- Icon font awesome -> bars -->
+        </button>
+      </div>
+      
+      <!-- start main navigation bar -->
+      <nav class="header__nav is-desabled">
+        <ul class="header__nav__list">
+          <li>
+            <a href="#" class="header__nav__link">About</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav__link">Careers</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav__link">Events</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav__link">Products</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav__link">Support</a>
+          </li>     
+        </ul>
+      </nav>
+    </header>
+    <!-- end main navigation bar -->
     
-  <section class="box-text">
-    <h1 class="box-text__title">
-      Immersive experiences that deliver
-    </h1>
-  </section>
+    <section class="box-text">
+      <h1 class="box-text__title">
+        Immersive experiences that deliver
+      </h1>
+    </section>
+  </div>
 
   <main>
     <section class="c-interactive">
@@ -76,17 +71,34 @@
       </p>
     </section>
 
-    <section class="sect-posts">
+    <section class="c-posts">
       <h2 class="sub-heading">Our creations</h2>
-      <div class="sect-posts__info__card-posts">
-        Deep earth
-        Night arcade
-        Soccer team VR
-        The grid
-        From up above VR
-        Pocket borealis
-        The curiosity
-        Make it fisheye
+      <div class="c-posts__list-cards">
+        <div class="c-posts__cards c-posts__cards--bg1">
+          <h4 class="c-posts__title">Deep
+             earth</h4>
+        </div>
+        <div class="c-posts__cards c-posts__cards--bg2">
+          <h4 class="c-posts__title">Night arcade</h4>
+        </div>
+        <div class="c-posts__cards c-posts__cards--bg3">
+          <h4 class="c-posts__title">Soccer team VR</h4>
+        </div>
+        <div class="c-posts__cards c-posts__cards--bg4">
+          <h4 class="c-posts__title">The grid</h4>
+        </div>
+        <div class="c-posts__cards c-posts__cards--bg5">
+          <h4 class="c-posts__title">From up above VR</h4>
+        </div>
+        <div class="c-posts__cards c-posts__cards--bg6">
+          <h4 class="c-posts__title">Pocket borealis</h4>
+        </div>
+        <div class="c-posts__cards c-posts__cards--bg7">
+          <h4 class="c-posts__title">The curiosity</h4>
+        </div>
+        <div class="c-posts__cards c-posts__cards--bg8">
+          <h4 class="c-posts__title">Make it fisheye</h4>
+        </div>     
       </div>
       <button class="button">See all</button>
     </section>
@@ -95,19 +107,38 @@
   <footer class="footer">
       <ul class="footer__nav">
         <li class="footer__item">
+          <a href="#" class="footer__link footer__link--large">Loopstudios</a>
+        </li>
+        <li class="footer__item">
           <a href="#" class="footer__link">About</a>
+        </li>
+        <li>
           <a href="#" class="footer__link">Careers</a>
+        </li>
+        <li>
           <a href="#" class="footer__link">Events</a>
+        </li>
+        <li>
           <a href="#" class="footer__link">Products</a>
+        </li>
+        <li>
           <a href="#" class="footer__link">Support</a>
         </li>
+        <li href="#" class="footer__link">
+          <div>
+            <a href="#" class="footer__link"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="#" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="footer__link"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="#" class="footer__link"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </li>
       </ul>
-      <span class="footer__reserved">© 2021 Loopstudios. All rights reserved.</span>
+      <span class="footer__reserved">© 2022 Loopstudios. All rights reserved.</span>
     </div>
     
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/VitorBarbon">Vitor barbon</a>.
+    <div style="color: #FFFFFF; text-align: center;">
+      Challenge by <a style="color: #806b6b;" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a style="color: #806b6b;" href="https://github.com/VitorBarbon">Vitor barbon</a>.
     </div>
   </footer>
 </body>
