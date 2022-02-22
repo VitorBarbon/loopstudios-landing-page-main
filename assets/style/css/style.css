@@ -8,8 +8,7 @@
 }
 
 .bg-container {
-  background-image: url(/assets/images/mobile/image-hero.jpg);
-  background-size: cover;
+  background: url(/assets/images/mobile/image-hero.jpg) cover;
 }
 
 .header {
@@ -123,14 +122,14 @@
 
 /* fazer each no sass */
 
-.c-posts__cards--bg1 { background-image: url(/assets/images/mobile/image-deep-earth.jpg);}
-.c-posts__cards--bg2 { background-image: url(/assets/images/mobile/image-night-arcade.jpg);}
-.c-posts__cards--bg3 { background-image: url(/assets/images/mobile/image-soccer-team.jpg);}
-.c-posts__cards--bg4 { background-image: url(/assets/images/mobile/image-grid.jpg);}
-.c-posts__cards--bg5 { background-image: url(/assets/images/mobile/image-from-above.jpg);}
-.c-posts__cards--bg6 { background-image: url(/assets/images/mobile/image-pocket-borealis.jpg);}
-.c-posts__cards--bg7 { background-image: url(/assets/images/mobile/image-curiosity.jpg);}
-.c-posts__cards--bg8 { background-image: url(/assets/images/mobile/image-fisheye.jpg);}
+.c-posts__cards--bg1 { background: url(/assets/images/mobile/image-deep-earth.jpg);}
+.c-posts__cards--bg2 { background: url(/assets/images/mobile/image-night-arcade.jpg);}
+.c-posts__cards--bg3 { background: url(/assets/images/mobile/image-soccer-team.jpg);}
+.c-posts__cards--bg4 { background: url(/assets/images/mobile/image-grid.jpg);}
+.c-posts__cards--bg5 { background: url(/assets/images/mobile/image-from-above.jpg);}
+.c-posts__cards--bg6 { background: url(/assets/images/mobile/image-pocket-borealis.jpg);}
+.c-posts__cards--bg7 { background: url(/assets/images/mobile/image-curiosity.jpg);}
+.c-posts__cards--bg8 { background: url(/assets/images/mobile/image-fisheye.jpg);}
 
 .footer {
   margin-top: 80px;
