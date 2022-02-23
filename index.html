@@ -22,14 +22,14 @@
       
       <div class="header__hamburguer">
         <!-- menu hamburguer is active -> mobile first design -->
-        <button class="button__hamburguer is-active">
+        <button class="button__hamburguer hamburguer">
           <i class="fa-solid fa-bars"></i>
           <!-- Icon font awesome -> bars -->
         </button>
       </div>
       
       <!-- start main navigation bar -->
-      <nav class="header__nav is-desabled">
+      <nav class="header__nav navbar">
         <ul class="header__nav__list">
           <li>
             <a href="#" class="header__nav__link">About</a>
@@ -48,8 +48,8 @@
           </li>     
         </ul>
       </nav>
+      <!-- end main navigation bar -->
     </header>
-    <!-- end main navigation bar -->
     
     <section class="box-text">
       <h1 class="box-text__title">
@@ -60,43 +60,47 @@
 
   <main>
     <section class="c-interactive">
-      <figure>
-        <img src="./assets/images//mobile/image-interactive.jpg" class="c-interactive__image" alt="The leader in interactive VR">
-      </figure>
-      <h2 class="sub-heading">
-        The leader in interactive VR
-      </h2>
-      <p class="sect-interactive__paragraph">
-        Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.
-      </p>
+      <div>
+        <figure>
+          <img src="./assets/images//mobile/image-interactive.jpg" class="c-interactive__image" alt="The leader in interactive VR">
+        </figure>
+        <div class="c-content__interactive">
+          <h2 class="sub-heading">
+            The leader in interactive VR
+          </h2>
+          <p class="c-content__interactive__paragraph">
+            Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="c-posts">
       <h2 class="sub-heading">Our creations</h2>
       <div class="c-posts__list-cards">
-        <div class="c-posts__cards c-posts__cards--bg1">
+        <div class="c-posts__cards c-posts__cards--deep-earth">
           <h4 class="c-posts__title">Deep
              earth</h4>
         </div>
-        <div class="c-posts__cards c-posts__cards--bg2">
+        <div class="c-posts__cards c-posts__cards--night-arcade">
           <h4 class="c-posts__title">Night arcade</h4>
         </div>
-        <div class="c-posts__cards c-posts__cards--bg3">
+        <div class="c-posts__cards c-posts__cards--soccer-team">
           <h4 class="c-posts__title">Soccer team VR</h4>
         </div>
-        <div class="c-posts__cards c-posts__cards--bg4">
+        <div class="c-posts__cards c-posts__cards--grid">
           <h4 class="c-posts__title">The grid</h4>
         </div>
-        <div class="c-posts__cards c-posts__cards--bg5">
+        <div class="c-posts__cards c-posts__cards--from-above">
           <h4 class="c-posts__title">From up above VR</h4>
         </div>
-        <div class="c-posts__cards c-posts__cards--bg6">
+        <div class="c-posts__cards c-posts__cards--pocket-borealis">
           <h4 class="c-posts__title">Pocket borealis</h4>
         </div>
-        <div class="c-posts__cards c-posts__cards--bg7">
+        <div class="c-posts__cards c-posts__cards--curiosity">
           <h4 class="c-posts__title">The curiosity</h4>
         </div>
-        <div class="c-posts__cards c-posts__cards--bg8">
+        <div class="c-posts__cards c-posts__cards--fisheye">
           <h4 class="c-posts__title">Make it fisheye</h4>
         </div>     
       </div>
@@ -105,34 +109,33 @@
   </main>
 
   <footer class="footer">
-      <ul class="footer__nav">
-        <li class="footer__item">
-          <a href="#" class="footer__link footer__link--large">Loopstudios</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">About</a>
-        </li>
-        <li>
-          <a href="#" class="footer__link">Careers</a>
-        </li>
-        <li>
-          <a href="#" class="footer__link">Events</a>
-        </li>
-        <li>
-          <a href="#" class="footer__link">Products</a>
-        </li>
-        <li>
-          <a href="#" class="footer__link">Support</a>
-        </li>
-        <li href="#" class="footer__link">
-          <div>
-            <a href="#" class="footer__link"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="#" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#" class="footer__link"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="#" class="footer__link"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-        </li>
-      </ul>
+    <div class="footer__logo-link">
+      <a href="#" class="footer__link footer__link--large">Loopstudios</a>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="footer__item">
+        <a href="#" class="footer__link">About</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">Careers</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">Events</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">Products</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">Support</a>
+      </li>
+    </ul>
+      <div class="c-icons">
+        <a href="#" class="footer__link"><i class="fa-brands fa-facebook-square"></i></a>
+        <a href="#" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="footer__link"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#" class="footer__link"><i class="fa-brands fa-instagram"></i></a>
+      </div>
       <span class="footer__reserved">© 2022 Loopstudios. All rights reserved.</span>
     </div>
     

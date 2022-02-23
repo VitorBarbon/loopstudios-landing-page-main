@@ -7,29 +7,39 @@
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .bg-container {
   background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-hero.jpg);
   background-size: cover;
 }
 .bg-container .header {
-  padding: 30px 20px;
+  padding: 30px 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .bg-container .header .logo__link {
-  font-size: 24px;
+  font-size: 30px;
   color: #FFFFFF;
 }
 .bg-container .header .button__hamburguer {
-  font-size: 24px;
+  position: absolute;
+  top: 32px;
+  right: 20px;
+  font-size: 30px;
   color: #FFFFFF;
   background-color: transparent;
   border: hidden;
   opacity: 0.8;
   cursor: pointer;
 }
-.bg-container .header .is-desabled {
+.bg-container .header .hamburguer {
+  display: block;
+}
+.bg-container .header .navbar {
   display: none;
 }
 .bg-container .box-text {
@@ -43,16 +53,18 @@
   text-transform: uppercase;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  padding: 22px;
+  padding: 24px;
   margin-top: 100px;
   margin-bottom: 200px;
 }
 
 .c-interactive {
-  width: 90%;
-  margin: 80px auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 18px;
 }
 .c-interactive .c-interactive__image {
   width: 100%;
@@ -65,7 +77,7 @@
   text-transform: uppercase;
 }
 
-.sect-interactive__paragraph {
+.c-content__interactive__paragraph {
   font-size: 18px;
 }
 
@@ -78,9 +90,9 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin: 50px 0 30px 0;
+  margin: 48px 0 30px 0;
 }
-.c-posts .c-posts__cards {
+.c-posts .c-posts__list-cards .c-posts__cards {
   position: relative;
   width: 100%;
   height: 100px;
@@ -92,7 +104,7 @@
   width: 120px;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 100;
   color: #FFFFFF;
   position: absolute;
@@ -101,7 +113,7 @@
 }
 
 .button {
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   border: 1px solid #000000;
@@ -112,37 +124,37 @@
   cursor: pointer;
 }
 
-/* fazer each no sass */
-.c-posts__cards--bg1 {
-  background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-deep-earth.jpg);
+/* do each class-css with image name */
+.c-posts__cards--deep-earth {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-deep-earth.jpg);
 }
 
-.c-posts__cards--bg2 {
-  background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-night-arcade.jpg);
+.c-posts__cards--night-arcade {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-night-arcade.jpg);
 }
 
-.c-posts__cards--bg3 {
-  background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-soccer-team.jpg);
+.c-posts__cards--soccer-team {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-soccer-team.jpg);
 }
 
-.c-posts__cards--bg4 {
-  background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-grid.jpg);
+.c-posts__cards--grid {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-grid.jpg);
 }
 
-.c-posts__cards--bg5 {
-  background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-from-above.jpg);
+.c-posts__cards--from-above {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-from-above.jpg);
 }
 
-.c-posts__cards--bg6 {
-  background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-pocket-borealis.jpg);
+.c-posts__cards--pocket-borealis {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-pocket-borealis.jpg);
 }
 
-.c-posts__cards--bg7 {
-  background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-curiosity.jpg);
+.c-posts__cards--curiosity {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-curiosity.jpg);
 }
 
-.c-posts__cards--bg8 {
-  background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-fisheye.jpg);
+.c-posts__cards--fisheye {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-fisheye.jpg);
 }
 
 .footer {
@@ -158,21 +170,181 @@
 }
 .footer .footer__link {
   font-family: "Alata", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #FFFFFF;
 }
+.footer .footer__link:hover {
+  color: #aad6c0;
+}
 .footer .footer__link--large {
-  font-size: 22px;
+  font-size: 24px;
   color: #FFFFFF;
 }
 .footer .footer__reserved {
   display: block;
   color: #FFFFFF;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .footer .fa-brands {
   font-size: 24px;
-  margin: 20px 10px;
+  margin: 18px 12px;
+}
+
+@media (min-width: 600px) {
+  .bg-container {
+    background-image: url(/assets/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+  }
+  .bg-container .header {
+    justify-content: space-around;
+  }
+  .bg-container .header .hamburguer {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .bg-container .header .navbar {
+    display: block;
+  }
+  .bg-container .header .navbar .header__nav__list {
+    display: flex;
+    gap: 18px;
+    margin-top: 5px;
+  }
+  .bg-container .header .navbar .header__nav__link {
+    color: #FFFFFF;
+  }
+  .bg-container .header .navbar .header__nav__link:hover {
+    color: #a9bace;
+  }
+  .bg-container .box-text .box-text__title {
+    width: 400px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 24px;
+    padding-right: 36px;
+  }
+
+  .c-interactive {
+    margin-top: 80px;
+  }
+  .c-interactive .c-interactive__image {
+    width: 350px;
+    transform: translateX(-50px);
+  }
+  .c-interactive .c-content__interactive {
+    width: 300px;
+    transform: translateX(150px) translateY(-100px);
+    background-color: #FFFFFF;
+    padding: 24px;
+    z-index: 100;
+  }
+  .c-interactive .c-content__interactive__paragraph {
+    font-size: small;
+  }
+
+  .c-posts {
+    width: 100%;
+    margin-top: -70px;
+  }
+  .c-posts .c-posts__list-cards {
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2.5%;
+  }
+  .c-posts .c-posts__list-cards .c-posts__cards {
+    width: 20%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .c-posts .c-posts__list-cards .c-posts__cards .c-posts__title {
+    width: 100px;
+  }
+
+  .c-posts__cards--deep-earth {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/desktop/image-deep-earth.jpg);
+  }
+
+  .c-posts__cards--night-arcade {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/desktop/image-night-arcade.jpg);
+  }
+
+  .c-posts__cards--soccer-team {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/desktop/image-soccer-team.jpg);
+  }
+
+  .c-posts__cards--grid {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/desktop/image-grid.jpg);
+  }
+
+  .c-posts__cards--from-above {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/desktop/image-from-above.jpg);
+  }
+
+  .c-posts__cards--pocket-borealis {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/desktop/image-pocket-borealis.jpg);
+  }
+
+  .c-posts__cards--curiosity {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/desktop/image-curiosity.jpg);
+  }
+
+  .c-posts__cards--fisheye {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/desktop/image-fisheye.jpg);
+  }
+
+  .footer {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    margin-top: 12px;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #000000;
+  }
+  .footer .footer__nav {
+    display: flex;
+    width: 50%;
+    margin: 40px;
+    flex-flow: row wrap;
+    gap: 12px;
+  }
+  .footer .footer__link {
+    font-family: "Alata", sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+  .footer .footer__link:hover {
+    color: #aad6c0;
+  }
+  .footer .footer__logo-link {
+    position: absolute;
+    top: 18px;
+    left: 42px;
+  }
+  .footer .c-icons {
+    position: absolute;
+    top: 18px;
+    right: 42px;
+    display: flex;
+  }
+  .footer .footer__link--large {
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  .footer .footer__reserved {
+    position: absolute;
+    top: 95px;
+    right: 42px;
+    display: block;
+    color: #FFFFFF;
+  }
+  .footer .fa-brands {
+    font-size: 24px;
+    margin: 18px 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
