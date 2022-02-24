@@ -92,6 +92,7 @@ body {
   align-items: center;
   text-align: center;
   padding: $medium;
+  margin-top: $huge;
   
   .c-interactive__image {
     width: 100%;
@@ -113,6 +114,7 @@ body {
   width: 90%;
   margin: 0 auto;
   text-align: center;
+  margin-top: $huge;
   
   .c-posts__list-cards {
     display: flex;
@@ -147,12 +149,18 @@ body {
   font-size: $small;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border: 1px solid #000000;
+  border: 1px solid $black;
   border-top-color: transparent;
   border-bottom-color: transparent;
-  background-color: #FFFFFF;
+  background-color: $white;
   padding: 5px 15px;
   cursor: pointer;
+
+  &:hover {
+  border-color: $black;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-in-out;
+  }
 }
 
 /* do each class-css with image name */
@@ -173,6 +181,7 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
   display: flex;
   flex-direction: column;
   gap: $small;
+  margin: $small;
   }
 
   .footer__link {
@@ -224,12 +233,11 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
           display: flex;
           gap: $medium;
           margin-top: 5px;
-        }
-
-        .header__nav__link {
-          color: $white;
-          &:hover {
-            color: #a9bace;
+            .header__nav__link {
+            color: $white;
+            &:hover {
+              color: #a9bace;
+            }
           }
         }
       } 

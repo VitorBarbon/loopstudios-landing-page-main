@@ -65,6 +65,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 18px;
+  margin-top: 48px;
 }
 .c-interactive .c-interactive__image {
   width: 100%;
@@ -85,6 +86,7 @@ body {
   width: 90%;
   margin: 0 auto;
   text-align: center;
+  margin-top: 48px;
 }
 .c-posts .c-posts__list-cards {
   display: flex;
@@ -122,6 +124,11 @@ body {
   background-color: #FFFFFF;
   padding: 5px 15px;
   cursor: pointer;
+}
+.button:hover {
+  border-color: #000000;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-in-out;
 }
 
 /* do each class-css with image name */
@@ -167,6 +174,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin: 12px;
 }
 .footer .footer__link {
   font-family: "Alata", sans-serif;
@@ -210,10 +218,10 @@ body {
     gap: 18px;
     margin-top: 5px;
   }
-  .bg-container .header .navbar .header__nav__link {
+  .bg-container .header .navbar .header__nav__list .header__nav__link {
     color: #FFFFFF;
   }
-  .bg-container .header .navbar .header__nav__link:hover {
+  .bg-container .header .navbar .header__nav__list .header__nav__link:hover {
     color: #a9bace;
   }
   .bg-container .box-text .box-text__title {
