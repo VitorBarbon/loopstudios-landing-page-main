@@ -15,6 +15,31 @@ body {
   background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-hero.jpg);
   background-size: cover;
 }
+.bg-container .header-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #14143b;
+  padding-top: 24px;
+  padding-left: 30px;
+}
+.bg-container .header-mobile .logo__link {
+  font-family: "Alata", sans-serif;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+.bg-container .header-mobile .header__nav {
+  margin: auto 0;
+  margin-right: auto;
+}
+.bg-container .header-mobile .header__nav .header__nav__list li {
+  margin-bottom: 24px;
+}
+.bg-container .header-mobile .header__nav .header__nav__link {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 36px;
+  color: #FFFFFF;
+}
 .bg-container .header {
   padding: 30px 18px;
   display: flex;
@@ -25,7 +50,13 @@ body {
   font-size: 30px;
   color: #FFFFFF;
 }
-.bg-container .header .button__hamburguer {
+.bg-container .header .is-active {
+  display: block;
+}
+.bg-container .header .is-hidden {
+  display: none;
+}
+.bg-container .button__hamburguer {
   position: absolute;
   top: 32px;
   right: 20px;
@@ -36,20 +67,14 @@ body {
   opacity: 0.8;
   cursor: pointer;
 }
-.bg-container .header .hamburguer {
-  display: block;
-}
-.bg-container .header .navbar {
-  display: none;
-}
 .bg-container .box-text {
   display: flex;
   justify-content: center;
 }
 .bg-container .box-text .box-text__title {
-  width: 300px;
+  width: 280px;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
@@ -206,23 +231,26 @@ body {
   .bg-container .header {
     justify-content: space-around;
   }
-  .bg-container .header .hamburguer {
+  .bg-container .header .button__hamburguer {
     visibility: hidden;
     opacity: 0;
   }
-  .bg-container .header .navbar {
+  .bg-container .header .header__nav {
     display: block;
   }
-  .bg-container .header .navbar .header__nav__list {
+  .bg-container .header .header__nav .header__nav__list {
     display: flex;
     gap: 18px;
     margin-top: 5px;
   }
-  .bg-container .header .navbar .header__nav__list .header__nav__link {
+  .bg-container .header .header__nav .header__nav__list .header__nav__link {
     color: #FFFFFF;
   }
-  .bg-container .header .navbar .header__nav__list .header__nav__link:hover {
+  .bg-container .header .header__nav .header__nav__list .header__nav__link:hover {
     color: #a9bace;
+  }
+  .bg-container .box-text {
+    justify-content: space-around;
   }
   .bg-container .box-text .box-text__title {
     width: 400px;
@@ -270,6 +298,9 @@ body {
   }
   .c-posts .c-posts__list-cards .c-posts__cards .c-posts__title {
     width: 100px;
+  }
+  .c-posts .button {
+    font-size: 24px;
   }
 
   .c-posts__cards--deep-earth {
@@ -353,6 +384,56 @@ body {
   .footer .fa-brands {
     font-size: 24px;
     margin: 18px 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .bg-container .header .logo__link {
+    font-size: 42px;
+  }
+  .bg-container .header .header__nav .header__nav__link {
+    font-size: 24px;
+  }
+  .bg-container .box-text {
+    width: 100vw;
+    justify-content: baseline;
+  }
+  .bg-container .box-text .box-text__title {
+    width: 450px;
+    font-size: 42px;
+    padding: 30px;
+    padding-right: 48px;
+  }
+
+  .c-interactive .c-interactive__image {
+    width: 450px;
+    transform: translateX(-50px);
+  }
+  .c-interactive .c-content__interactive {
+    width: 400px;
+    transform: translateX(200px) translateY(-100px);
+  }
+  .c-interactive .c-content__interactive__paragraph {
+    font-size: 18px;
+  }
+
+  .sub-heading {
+    font-size: 36px;
+  }
+
+  .footer .footer__link {
+    font-family: "Alata", sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  .footer .footer__link--large {
+    font-size: 36px;
+    color: #FFFFFF;
+  }
+  .footer .footer__reserved {
+    font-size: 24px;
+  }
+  .footer .fa-brands {
+    font-size: 30px;
   }
 }
 

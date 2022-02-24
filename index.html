@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <!-- styles -->
   <link rel="stylesheet" href="./assets/style/css/style.css">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css' integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p' crossorigin='anonymous'/> -->
+  <script src="https://kit.fontawesome.com/a3337218a6.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Loopstudios landing page</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 
@@ -22,14 +20,14 @@
       
       <div class="header__hamburguer">
         <!-- menu hamburguer is active -> mobile first design -->
-        <button class="button__hamburguer hamburguer">
+        <button class="button__hamburguer is-active">
           <i class="fa-solid fa-bars"></i>
           <!-- Icon font awesome -> bars -->
         </button>
       </div>
       
       <!-- start main navigation bar -->
-      <nav class="header__nav navbar">
+      <nav class="header__nav is-hidden">
         <ul class="header__nav__list">
           <li>
             <a href="#" class="header__nav__link">About</a>
@@ -55,6 +53,7 @@
       <h1 class="box-text__title">
         Immersive experiences that deliver
       </h1>
+      <div></div>
     </section>
   </div>
 
@@ -143,6 +142,8 @@
       Challenge by <a style="color: #806b6b;" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a style="color: #806b6b;" href="https://github.com/VitorBarbon">Vitor barbon</a>.
     </div>
+
+    <script src="./assets/js/main.js"></script>
   </footer>
 </body>
 </html>

@@ -34,6 +34,36 @@ body {
 .bg-container {
   background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/mobile/image-hero.jpg);
   background-size: cover;
+
+  .header-mobile {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #14143b;
+    padding-top: 24px;
+    padding-left: 30px;
+
+    .logo__link {
+      font-family: $font-alata;
+      font-size: $big;
+      color: #FFFFFF;
+    }
+
+    .header__nav {
+      margin: auto 0;
+      margin-right: auto;   
+
+      .header__nav__list li {
+        margin-bottom: $large;
+      }
+      
+      .header__nav__link  {
+        font-family: $font-josefin;
+        font-size: $big;
+        color: $white;
+      }
+    }
+  }
   
   .header {
     padding: $xlarge $medium;
@@ -42,39 +72,39 @@ body {
     align-items: center;
     
     .logo__link {
-    font-size: $xlarge;
-    color: #FFFFFF;
-    }  
-    
-    .button__hamburguer {
-      position: absolute;
-      top: 32px;
-      right: 20px;
       font-size: $xlarge;
       color: #FFFFFF;
-      background-color: transparent;
-      border: hidden;
-      opacity: .8;
-      cursor: pointer;
-    }
-
-    .hamburguer {
+    }  
+  
+    .is-active {
       display: block;
     }
     
-    .navbar {
+    .is-hidden {
       display: none;
     }
   } 
+
+  .button__hamburguer {
+    position: absolute;
+    top: 32px;
+    right: 20px;
+    font-size: $xlarge;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: hidden;
+    opacity: .8;
+    cursor: pointer;
+  }
 
   .box-text {
     display: flex;
     justify-content: center;
     
     .box-text__title {
-      width: 300px;
+      width: 280px;
       font-family: $font-josefin;
-      font-size: $big;
+      font-size: $xlarge;
       text-transform: uppercase;
       color: #FFFFFF;
       border: 1px solid #FFFFFF;
@@ -222,12 +252,12 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
     .header{
       justify-content: space-around;
 
-      .hamburguer {
+      .button__hamburguer  {
         visibility: hidden;
         opacity: 0;
       }
       
-      .navbar {
+      .header__nav {
         display: block;
         .header__nav__list {
           display: flex;
@@ -244,6 +274,7 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
     }
 
     .box-text {
+      justify-content: space-around;
       .box-text__title {
         width: 400px;
         font-family: $font-josefin;
@@ -297,6 +328,9 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
         }
       }  
     }
+    .button {
+      font-size: $large;
+    }
   }
     
   $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above', 'pocket-borealis', 'curiosity', 'fisheye';
@@ -314,20 +348,19 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
     padding-top: 50px;
     text-align: center;
     background-color: #000000;
-    
-    
+
     .footer__nav {
-    display: flex;
-    width: 50%;
-    margin: 40px;
-    flex-flow: row wrap;
-    gap: $small;
+      display: flex;
+      width: 50%;
+      margin: 40px;
+      flex-flow: row wrap;
+      gap: $small;
     }
   
     .footer__link {
       font-family: $font-alata;
       font-size: $medium;
-      color: #FFFFFF;
+      color: $white;
   
       &:hover {
         color: #aad6c0;
@@ -349,7 +382,7 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
   
     .footer__link--large {
       font-size: $large;
-      color: #FFFFFF;
+      color: $white;
     }
   
     .footer__reserved {
@@ -357,12 +390,78 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
       top: 95px;
       right: $xbig;
       display: block;
-      color: #FFFFFF;
+      color: $white;
     }
   
     .fa-brands {
       font-size: $large;
       margin: $medium $small;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .bg-container {
+    .header{
+      .logo__link {
+        font-size: $xbig;
+      }
+      .header__nav {
+        .header__nav__link {
+          font-size: $large;
+        }
+      }
+    }
+    .box-text {
+      width: 100vw;
+      justify-content: baseline;
+      .box-text__title {
+        width: 450px;
+        font-size: $xbig;
+        padding: $xlarge;
+        padding-right: $huge;
+      }
+    }  
+  }
+
+  .c-interactive {
+    .c-interactive__image {
+      width: 450px;
+      transform: translateX(-50px);
+    }
+    
+    .c-content__interactive {
+      width: 400px;
+      transform: translateX(200px) translateY(-100px);
+    }
+
+    .c-content__interactive__paragraph {
+      font-size: $medium;
+    }
+  }
+  .sub-heading {
+    font-size: $big;
+  }
+
+  .footer {  
+    .footer__link {
+      font-family: $font-alata;
+      font-size: $large;
+      color: $white;
+    }
+  
+    .footer__link--large {
+      font-size: $big;
+      color: $white;
+    }
+  
+    .footer__reserved {
+      font-size: $large;
+    }
+  
+    .fa-brands {
+      font-size: $xlarge;
     }
   }
 }
