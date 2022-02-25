@@ -246,10 +246,10 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
   .bg-container {
     background-image: url(https://vitorbarbon.github.io/loopstudios-landing-page-main/assets/images/desktop/image-hero.jpg);
     background-repeat: no-repeat;
-    // background-size: cover;
 
 
     .header{
+      padding-top: $big;
       justify-content: space-around;
 
       .button__hamburguer  {
@@ -275,10 +275,12 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
 
     .box-text {
       justify-content: space-around;
+      margin-right: 15%;
+
       .box-text__title {
-        width: 400px;
+        width: 500px;
         font-family: $font-josefin;
-        font-size: $big;
+        font-size: $huge;
         text-transform: uppercase;
         color: #FFFFFF;
         border: 1px solid #FFFFFF;
@@ -292,26 +294,30 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
     margin-top: 80px;
     
     .c-interactive__image {
-      width: 350px;
-      transform: translateX(-50px);
+      width: 600px;
+      transform: translateX(-100px);
     }
     
     .c-content__interactive {
-      width: 300px;
-      transform: translateX(150px) translateY(-100px);
+      width: 400px;
+      transform: translateX(350px) translateY(-250px);
       background-color: $white;
       padding: $large;
       z-index: 100;
     }
 
     .c-content__interactive__paragraph {
-      font-size: small;
+      font-size: $medium;
     }
   }
   .c-posts {
     width: 100%;
-    margin-top: -70px;
+    margin-top: -120px;
     margin-bottom: 100px;
+
+    .sub-heading {
+      position: relative;
+    }
 
     .c-posts__list-cards {
       flex-flow: row wrap;
@@ -320,7 +326,7 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
       
       .c-posts__cards {
         width: 20%;
-        height: 200px;
+        height: 400px;
         margin-bottom: 20px;
 
         .c-posts__title {
@@ -401,67 +407,67 @@ $list-images: 'deep-earth', 'night-arcade',  'soccer-team', 'grid', 'from-above'
 }
 
 
-@media (min-width: 1200px) {
-  .bg-container {
-    .header{
-      .logo__link {
-        font-size: $xbig;
-      }
-      .header__nav {
-        .header__nav__link {
-          font-size: $large;
-        }
-      }
-    }
-    .box-text {
-      width: 100vw;
-      justify-content: baseline;
-      .box-text__title {
-        width: 450px;
-        font-size: $xbig;
-        padding: $xlarge;
-        padding-right: $huge;
-      }
-    }  
-  }
+// @media (min-width: 1200px) {
+//   .bg-container {
+//     .header{
+//       .logo__link {
+//         font-size: $xbig;
+//       }
+//       .header__nav {
+//         .header__nav__link {
+//           font-size: $large;
+//         }
+//       }
+//     }
+//     .box-text {
+//       width: 100vw;
+//       justify-content: baseline;
+//       .box-text__title {
+//         width: 450px;
+//         font-size: $xbig;
+//         padding: $xlarge;
+//         padding-right: $huge;
+//       }
+//     }  
+//   }
 
-  .c-interactive {
-    .c-interactive__image {
-      width: 450px;
-      transform: translateX(-50px);
-    }
+//   .c-interactive {
+//     .c-interactive__image {
+//       width: 450px;
+//       transform: translateX(-50px);
+//     }
     
-    .c-content__interactive {
-      width: 400px;
-      transform: translateX(200px) translateY(-100px);
-    }
+//     .c-content__interactive {
+//       width: 400px;
+//       transform: translateX(200px) translateY(-100px);
+//     }
 
-    .c-content__interactive__paragraph {
-      font-size: $medium;
-    }
-  }
-  .sub-heading {
-    font-size: $big;
-  }
+//     .c-content__interactive__paragraph {
+//       font-size: $medium;
+//     }
+//   }
+//   .sub-heading {
+//     font-size: $big;
+//   }
 
-  .footer {  
-    .footer__link {
-      font-family: $font-alata;
-      font-size: $large;
-      color: $white;
-    }
+//   .footer {  
+//     .footer__link {
+//       font-family: $font-alata;
+//       font-size: $large;
+//       color: $white;
+//     }
   
-    .footer__link--large {
-      font-size: $big;
-      color: $white;
-    }
+//     .footer__link--large {
+//       font-size: $big;
+//       color: $white;
+//     }
   
-    .footer__reserved {
-      font-size: $large;
-    }
+//     .footer__reserved {
+//       font-size: $large;
+//     }
   
-    .fa-brands {
-      font-size: $xlarge;
-    }
-  }
-}
+//     .fa-brands {
+//       font-size: $xlarge;
+//     }
+//   }
+// }
